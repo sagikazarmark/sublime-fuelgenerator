@@ -85,12 +85,14 @@ class OilCommand(sublime_plugin.WindowCommand):
         if os.name == 'posix':
             self.args = shlex.split(str(self.args))
 
-        if command:
+        if command and not (command == 'c' or command == 'console'):
             try:
                 proc = subprocess.Popen(self.args, shell=False, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
                 self.proc(proc, command)
             except IOError:
                 sublime.status_message('IOError - command aborted')
+        elif command == 'c' or command == 'console':
+            sublime.status_message('Oil Console is not enabled in Sublime Text')
         else:
             sublime.status_message('Command not set')
 
