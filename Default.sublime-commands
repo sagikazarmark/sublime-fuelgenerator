@@ -1,0 +1,64 @@
+[
+	{
+		"caption": "Fuel Generate: Model",
+		"command": "generate",
+		"args": {
+			"generate": "model",
+			"fill_in": "Enter the name of the model",
+			"fields": true,
+			"fields_label": "Table fields in the column:type[size] format"
+		}
+	},
+	{
+		"caption": "Fuel Generate: Controller",
+		"command": "generate",
+		"args": {
+			"generate": "controller",
+			"fill_in": "Enter the name of the controller",
+			"fields": true,
+			"fields_label": "Actions in action1 action2 ... format"
+		}
+	},
+	{
+		"caption": "Fuel Generate: Migration",
+		"command": "generate",
+		"args": {
+			"generate": "migration",
+			"fill_in": "Enter the name of the migration",
+			"fields": true,
+			"fields_label": "Table fields in the column:type[size] format"
+		}
+	},
+	{
+		"caption": "Fuel Generate: Scaffold",
+		"command": "generate",
+		"args": {
+			"generate": "scaffold",
+			"fill_in": "Enter the name of the scaffold",
+			"fields": true,
+			"fields_label": "Table fields in the column:type[size] format"
+		}
+	},
+	{
+		"caption": "Fuel Generate: Task",
+		"command": "generate",
+		"args": {
+			"generate": "task",
+			"fill_in": "Enter the name of the task",
+			"fields": true,
+			"fields_label": "Commands in the cmd1 cmd2 ... format"
+		}
+	},
+	{
+		"caption": "Fuel Generate: Config",
+		"command": "generate",
+		"args": {
+			"generate": "config",
+			"fill_in": "Enter the name of the config"
+		}
+	},
+	{
+		"caption": "Fuel Oil Command",
+		"command": "oil"
+	}
+]
