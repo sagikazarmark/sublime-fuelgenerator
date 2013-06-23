@@ -4,9 +4,9 @@ import subprocess
 import sublime
 import sublime_plugin
 
-class GenerateCommand(sublime_plugin.WindowCommand):
+class OilgenerateCommand(sublime_plugin.WindowCommand):
     def __init__(self, *args, **kwargs):
-        super(GenerateCommand, self).__init__(*args, **kwargs)
+        super(OilgenerateCommand, self).__init__(*args, **kwargs)
 
         settings = sublime.load_settings('fuelgenerator.sublime-settings')
         self.php_path = settings.get('php_path', 'php')
