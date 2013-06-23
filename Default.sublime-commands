@@ -1,7 +1,7 @@
 [
 	{
 		"caption": "Fuel Generate: Model",
-		"command": "oilgenerate",
+		"command": "oil_generate",
 		"args": {
 			"generate": "model",
 			"fill_in": "Enter the name of the model",
@@ -11,7 +11,7 @@
 	},
 	{
 		"caption": "Fuel Generate: Controller",
-		"command": "oilgenerate",
+		"command": "oil_generate",
 		"args": {
 			"generate": "controller",
 			"fill_in": "Enter the name of the controller",
@@ -21,7 +21,7 @@
 	},
 	{
 		"caption": "Fuel Generate: Migration",
-		"command": "oilgenerate",
+		"command": "oil_generate",
 		"args": {
 			"generate": "migration",
 			"fill_in": "Enter the name of the migration",
@@ -31,7 +31,7 @@
 	},
 	{
 		"caption": "Fuel Generate: Scaffold",
-		"command": "oilgenerate",
+		"command": "oil_generate",
 		"args": {
 			"generate": "scaffold",
 			"fill_in": "Enter the name of the scaffold",
@@ -41,7 +41,7 @@
 	},
 	{
 		"caption": "Fuel Generate: Task",
-		"command": "oilgenerate",
+		"command": "oil_generate",
 		"args": {
 			"generate": "task",
 			"fill_in": "Enter the name of the task",
@@ -51,7 +51,7 @@
 	},
 	{
 		"caption": "Fuel Generate: Config",
-		"command": "oilgenerate",
+		"command": "oil_generate",
 		"args": {
 			"generate": "config",
 			"fill_in": "Enter the name of the config"
