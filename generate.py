@@ -44,7 +44,7 @@ class OilGenerateCommand(sublime_plugin.WindowCommand):
     def oil(self):
         self.args = ' '.join(map(unicode, self.args))
         if os.name == 'posix':
-            self.args = shlex.split(unicode(self.args))
+            self.args = shlex.split(str(self.args.encode('utf-8')))
         try:
             proc = subprocess.Popen(self.args, cwd=self.PROJECT_PATH, shell=False, stdout=subprocess.PIPE)
             self.proc(proc)
@@ -83,7 +83,7 @@ class OilCommand(sublime_plugin.WindowCommand):
     def oil(self, command):
         self.args = '%s %s %s' % (self.php_path, os.path.join(self.PROJECT_PATH, 'oil'), command)
         if os.name == 'posix':
-            self.args = shlex.split(unicode(self.args))
+            self.args = shlex.split(str(self.args.encode('utf-8')))
 
         if command and not (command == 'c' or command == 'console'):
             try:
