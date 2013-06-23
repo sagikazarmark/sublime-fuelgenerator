@@ -98,7 +98,7 @@ class OilCommand(sublime_plugin.WindowCommand):
 
     def proc(self, proc, command):
         if proc.poll() is None:
-            sublime.set_timeout(lambda: self.proc(proc), 200)
+            sublime.set_timeout(lambda: self.proc(proc, command), 200)
         else:
             output = proc.communicate()[0].decode('utf-8')
             if output:
