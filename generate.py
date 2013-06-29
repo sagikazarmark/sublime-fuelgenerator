@@ -28,7 +28,8 @@ class OilGenerateCommand(sublime_plugin.WindowCommand):
                     # call function to do the work
                     self.window.show_input_panel(self.fill_in, '', self.append, None, None)
                 elif self.command == 'package':
-                                self.args = [self.php_path, os.path.join(self.PROJECT_PATH, 'oil'), 'r generate:%s' % self.command]
+                    self.args = [self.php_path, os.path.join(self.PROJECT_PATH, 'oil'), 'r generate:%s' % self.command]
+                    self.window.show_input_panel(self.fill_in, '', self.append, None, None)
                 else:
                     sublime.status_message("Generator command not supported")
             else:
