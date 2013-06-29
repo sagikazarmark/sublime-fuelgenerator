@@ -58,6 +58,16 @@
 		}
 	},
 	{
+		"caption": "Fuel Generate: Package",
+		"command": "oil_generate",
+		"args": {
+			"generate": "package",
+			"fill_in": "Enter the name of the package",
+			"fields": true,
+			"fields_label": "Drivers in driver1,driver2,driver3 ... format"
+		}
+	},
+	{
 		"caption": "Fuel Oil Command",
 		"command": "oil"
 	}
