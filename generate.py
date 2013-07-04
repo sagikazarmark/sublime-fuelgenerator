@@ -47,11 +47,15 @@ class OilGenerateCommand(sublime_plugin.WindowCommand):
 
     def oil(self):
         self.args = ' '.join(map(str, self.args))
-        try:
-            proc = subprocess.Popen(self.args, cwd=self.PROJECT_PATH, shell=False, stdout=subprocess.PIPE)
-            self.proc(proc)
-        except IOError:
-            sublime.status_message('IOError - command aborted')
+        # if os.name == 'posix':
+        #     self.args = shlex.split(str(self.args.encode('utf-8')))
+
+        sublime.status_message("args: %s" % self.args)
+        # try:
+        #     proc = subprocess.Popen(self.args, cwd=self.PROJECT_PATH, shell=False, stdout=subprocess.PIPE)
+        #     self.proc(proc)
+        # except IOError:
+        #     sublime.status_message('IOError - command aborted')
 
     def proc(self, proc):
         if proc.poll() is None:
