@@ -49,6 +49,7 @@ class OilGenerateCommand(sublime_plugin.WindowCommand):
         self.args = ' '.join(map(str, self.args))
         if os.name == 'posix':
             self.args = shlex.split(str(self.args.encode('utf-8')))
+        sublime.status_message("args: %s" % self.args)
         try:
             proc = subprocess.Popen(self.args, cwd=self.PROJECT_PATH, shell=False, stdout=subprocess.PIPE)
             self.proc(proc)
