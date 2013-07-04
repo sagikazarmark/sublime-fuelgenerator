@@ -46,7 +46,7 @@ class OilGenerateCommand(sublime_plugin.WindowCommand):
             self.oil()
 
     def oil(self):
-        self.args = ' '.join(map(unicode, self.args))
+        self.args = ' '.join(map(str, self.args))
         if os.name == 'posix':
             self.args = shlex.split(str(self.args.encode('utf-8')))
         try:
