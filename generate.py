@@ -48,8 +48,8 @@ class OilGenerateCommand(sublime_plugin.WindowCommand):
     def oil(self):
         self.args = ' '.join(map(str, self.args))
         # try:
-            proc = subprocess.Popen(self.args, cwd=self.PROJECT_PATH, shell=False, stdout=subprocess.PIPE)
-            self.proc(proc)
+        proc = subprocess.Popen(self.args, cwd=self.PROJECT_PATH, shell=False, stdout=subprocess.PIPE)
+        self.proc(proc)
         # except IOError:
         #     sublime.status_message('IOError - command aborted')
 
