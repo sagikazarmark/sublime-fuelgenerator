@@ -2,6 +2,8 @@
 
 A Sublime Text plugin that allows you to make use of the Fuel oil directly within Sublime Text.
 
+**UPDATE: I plan to do some updates in the near future**
+
 ## Installation
 
 * Install the ST plugin through Package Control: *Sublime Fuel Generator* (soon)
